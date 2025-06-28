@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FundMe | Decentralized Crowdfunding</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!-- loader -->
+    <div id="loader" class="loader hidden"></div>
+  <div class="container">
+    <header>
+      <img src="https://cdn-icons-png.flaticon.com/512/7641/7641727.png" alt="FundMe Logo" class="logo"/>
+      <h1>FundMe</h1>
+      <p class="subheading">A decentralized crowdfunding platform built on Ethereum</p>
+      <button id="connect-btn" class="btn primary">🔗 Connect Wallet</button>
+    </header>
+    <div id="fund-message" class="message hidden"></div>
+    <section class="card">
+      <h2>💸 Fund a Project</h2>
+      <label for="ethAmount">Enter ETH Amount</label>
+      <input id="ethAmount" type="number" placeholder="e.g., 0.01" />
+      <button id="fund-btn" class="btn success">🚀 Fund</button>
+    </section>
+
+    <section class="card">
+        <h2>📊 Check Contract Balance</h2>
+        <button id="getBalance-btn" class="btn warning">💰 Get Balance</button>
+        <div id="balance-display" class="balance-display hidden">Balance: 0 ETH</div>
+    </section>
+
+
+    <div id="withdraw-message" class="message hidden"></div>
+    <section class="card">
+      <h2>🔓 Withdraw Funds</h2>
+      <button id="withdraw-btn" class="btn danger">🏦 Withdraw</button>
+    </section>
+
+
+    <!-- ⏳ Pre-loader -->
+    <!-- <div id="status-bar" class="status-bar hidden">Processing Transaction...</div> -->
+    <!-- <div id="message" class="message hidden"></div> -->
+
+    <footer>
+      <p>&copy; 2025 FundMe | Built with ❤️ using Solidity & Ethers.js</p>
+    </footer>
+  </div>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
+
+
+
+
